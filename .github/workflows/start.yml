@@ -1,4 +1,5 @@
 name: 打包项目
+
 on: push
 
 jobs:
@@ -8,7 +9,7 @@ jobs:
 
     steps:
       - name: 读取仓库内容
-      - uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
       - name: 安装依赖
       - run: npm install
